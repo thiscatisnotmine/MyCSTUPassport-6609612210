@@ -48,18 +48,49 @@
     height: 100vh;
     background-color: skyblue;
     display: flex;
+    /*flex-direction: row;*/
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 0 10%;
+    position: relative;
+    
 }
+
+h1 {
+    position: absolute;
+    top: 5%;
+    color: darkcyan;
+}
+
 
 .container_1 {
-    width: 20%;
-    height: 60%;
+    width: 30%;
+    height: 50%;
     background-color: antiquewhite;
     overflow: hidden;
+    border-radius: 50px;
 
 }
+
+.container_2 {
+    width: 30%;
+    height: 50%;
+    background-color: antiquewhite;
+    overflow: hidden;
+    border-radius: 50px;
+
+}
+
+.container_3 {
+    width: 30%;
+    height: 50%;
+    background-color: antiquewhite;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+
 
 
 
