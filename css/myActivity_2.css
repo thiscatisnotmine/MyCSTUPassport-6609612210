@@ -72,7 +72,8 @@
 .content {
     width: 100%;
     height: 100vh;
-    background-color: teal;
+    position: absolute;
+    background-color: #88b4be;
     position: relative;
     display: flex;
     justify-content: center;
@@ -81,16 +82,37 @@
 
 .pic_activity2 {
     width: 40%;
-    height: 30vh;
+    height: 50vh;
     border-radius: 50px;
     background-color: sandybrown;
     position: absolute;
     top: 5%;
+    overflow: hidden;
+}
+
+.pic_activity2 > img {
+    width: 100%;
+    height: 50vh;
+    
 }
 
 .info_activity2 {
     position: absolute;
-    top:40%;
+    top:60%;
     left: 10%;
     right: 10%;
+}
+
+.pic_TO {
+    position: absolute;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    top: 70%;
+    left: 30%;
+}
+
+.pic_TO > img {
+    width: 30%;
+    height: 20vh;
 }
