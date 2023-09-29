@@ -73,10 +73,11 @@
 .content {
     width: 100%;
     height: 100vh;
-    background-color: teal;
+    background-color: #88b4be;
     position: relative;
     display: flex;
     justify-content: center;
+    line-height: 1.5rem;
     
 }
 
@@ -84,19 +85,16 @@
     width: 40%;
     height: 30vh;
     border-radius: 50px;
-    background-color: sandybrown;
+    background-color: #88b4be;
     position: absolute;
     top: 5%;
-    /*overflow: hidden;*/
+    overflow: hidden;
 
 }
 
-.pic_activity1::after {
+.pic_activity1 > img {
     width: 100%;
-    height: 100vh;
-    content: "";
-    background-image: url(../image/FM01.jpg);
-    background-size: cover;
+    height: 40vh;
 }
 
 
@@ -105,4 +103,20 @@
     top:40%;
     left: 10%;
     right: 10%;
+}
+
+.pic_firstmeet {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 60%;
+    left: 25%;
+    gap: 15px;
+
+}
+
+.pic_firstmeet > img {
+    width: 20%;
+    height: 20vh;
+
 }
