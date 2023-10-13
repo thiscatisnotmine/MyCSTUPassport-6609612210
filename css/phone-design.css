@@ -38,6 +38,8 @@
     }
 
     .menu li a {
+        position: absolute;
+        top: 89%;
         text-decoration: none;
         color: white;
     }
