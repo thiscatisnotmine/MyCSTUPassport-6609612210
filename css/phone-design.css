@@ -11,7 +11,6 @@
         border: none;
         display: flex;
         position: relative;
-        /*background-color: red;*/
     }
 
     nav {
@@ -67,7 +66,7 @@
      }
 
      .banner-info {
-        top: 35%;  
+        top: 25%;  
         color: white;
         text-align: center;
         position: absolute;
@@ -103,8 +102,8 @@
     .media {
         width: 100%;
         position: absolute;
-        top: 50%;
-        margin-left: 55%;
+        top: 80%;
+        margin-left: 40%;
         
     }
 
@@ -120,12 +119,12 @@
     }
 
     .intro {
-        font-size: 1.3vw;
+        font-size: 2vw;
     }
     
     .content {
-        line-height: 2.5rem;
-        font-size: 1.8vw;
+        line-height: 3rem;
+        font-size: 3.5vw;
     }
 
     /*Content My hobbies*/
@@ -151,8 +150,105 @@
         height: 25%;
         position: absolute;
         margin-left: 50%;
-        margin-top: 6.5%;
+        margin-top: 5%;
         border-radius: 100%;
+    }
+
+    .hobbies-music {
+        background-color: #056c89;
+        width: 50%;
+        height: 10vh;
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 8%;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    .hobbies-music-img {
+        width: 100%;
+        height: 10vh;
+        margin: 0 auto;
+        background-color: red;
+    }
+    
+    .hobbies-music-img img {
+        width: 100%;
+        height: 10vh;
+        margin: 0 auto;
+    }
+    
+    .hobbies-music-info {
+        color: #eeeeee;
+        font-size: 0.9rem;
+        margin: 10%;
+        line-height: 1.1rem;
+    }
+    
+    .hobbies-game {
+        background-color: #eeeeee;
+        width: 50%;
+        height: 70vh;
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 16%;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    .hobbies-game-img {
+        width: 100%;
+        height: 40vh;
+        margin: 0 auto;
+        background-color: red;
+    }
+    
+    .hobbies-game-img img {
+        width: 100%;
+        height: 40vh;
+        margin: 0 auto;
+    }
+    
+    
+    .hobbies-game-info {
+        color: #023653;
+        font-size: 0.9rem;
+        margin: 10%;
+        line-height: 1.1rem;
+    }
+    
+    .hobbies-sleep {
+        background-color: #056c89;
+        width: 15%;
+        height: 70vh;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+        position: absolute;
+        margin-top: 6%;
+        margin-left: 80%;
+    }
+    
+    .hobbies-sleep-img {
+        width: 100%;
+        height: 40vh;
+        background-color: red;
+        margin: 0 auto;
+    }
+    
+    .hobbies-sleep-img img {
+        width: 100%;
+        height: 40vh;
+        margin: 0 auto;
+    }
+    
+    .hobbies-sleep-info {
+        color: #eeeeee;
+        font-size: 0.9rem;
+        margin: 10%;
+        line-height: 1.1rem;
     }
 
 
