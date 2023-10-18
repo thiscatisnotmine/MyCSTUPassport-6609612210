@@ -102,7 +102,7 @@
     }
 
     .media {
-        width: 100%;
+        width: 80%;
         position: absolute;
         top: 40%;
         margin-left: 10%;
@@ -256,6 +256,59 @@
         margin: 10%;
         line-height: 1.3rem;
     }
+
+    /*Content Story of my life*/
+
+    .story {
+        width:100%; ;
+        height: 100vh;
+        background-color: #eeeeee;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .story h1 {
+        position: absolute;
+        font-size: 2rem;
+        top: 3%;
+        left: 20%;
+        right: 20%;
+
+    }
+
+    .y2023 {
+        width: 70%;
+        height: 80vh;
+        position: absolute;
+        background-color: #056c89;
+        top: 15%;
+        left: 15%;
+        align-items: center;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden; 
+    }
+
+    .y2023-img {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        position: absolute;
+    }
+
+    .y2023-info {
+        color: #eeeeee;
+        left: 8%;
+        right: 8%;
+        top: 55%;
+        display: flex;
+        position: absolute;
+        line-height: 1.3rem;
+        font-size: 0.9rem;
+    }
+
 
 
 }
