@@ -103,8 +103,8 @@
     .media {
         width: 100%;
         position: absolute;
-        top: 80%;
-        margin-left: 40%;
+        top: 45%;
+        margin-left: 10%;
         
     }
 
@@ -114,18 +114,20 @@
 
     .aboutme-info {
         width: 100%;
-        margin-left: 5%;
+        margin: 0;
         position: absolute;
-        top: 15%;
+        top: 10%;
     }
 
     .intro {
-        font-size: 2vw;
+        padding: 0 5%;
+        font-size: 15px;
     }
     
     .content {
-        line-height: 3rem;
-        font-size: 3.5vw;
+        line-height: 2rem;
+        font-size: 5vw;
+        margin-left: 5%;
     }
 
     /*Content My hobbies*/
