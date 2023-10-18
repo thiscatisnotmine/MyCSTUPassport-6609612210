@@ -309,7 +309,63 @@
         font-size: 0.9rem;
     }
 
+    /*Content Contact me*/
 
+    footer {
+        width: 100%;
+        height: 10vh;
+        background-color: #88b4be;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .contactme {
+        width: 100%;
+        height: 100px;
+        /*background-color: antiquewhite;*/
+        height: 3vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        top: 40%;
+        position: absolute;
+        text-align: center;
+
+    }
+
+    .contact  {
+        /*position: absolute;*/
+        margin-left: 20px;
+        width: 100px;
+        height: 3vh;
+        /*background-color: aquamarine;*/
+        font-size: 1rem;  
+    }
+
+    .ig a {
+        /*background-color: pink;*/
+        width: 25px;
+        height: 3vh;
+    }
+
+    .ig a img {
+        width: 100%;
+        height: 3vh;
+    }
+
+    .line a {
+        /*background-color: aquamarine;*/
+        width: 25px;
+        height: 3vh;
+    }
+
+    .line a img {
+        width: 100%;
+        height: 3vh;
+    }
 
 }
 
