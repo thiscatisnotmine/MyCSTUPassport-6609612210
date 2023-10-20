@@ -25,7 +25,7 @@
         height: 100vh;
         display: flex;
         position: relative;
-        background-color: #023653;
+       /* background-color: #023653;*/
     }
 
     .banner nav {
@@ -427,7 +427,7 @@
         height: 100vh;
         display: flex;
         position: relative;
-        background-color: #023653;
+        /*background-color: #023653;*/
     }
 
     .banner nav {
