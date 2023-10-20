@@ -4,8 +4,806 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 1280px) {
+@media  screen and (min-width: 570px) and (max-width:760px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body {
+        background-color: gray;
+    }
 
+    .banner {
+        height: 100vh;
+        display: flex;
+        position: relative;
+        background-color: #023653;
+    }
+
+    .banner nav {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        /*background-color: red;*/
+    }
+    
+    .logo a {
+        color:white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        position: absolute;
+        top: 2%;
+        left: 4%;
+    }
+    
+    .menu {
+        height: 100vh;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        line-height: 500%;
+        background-color: rgba(0,0, 0, 0.4);
+       
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .menu li a:hover {
+        color: rgb(135, 248, 248);
+    }
 
     
+     .banner::after {
+        width: 100%;
+        height: 100vh;
+        content:"";
+        position: absolute;
+        background-image: url('https://images.pexels.com/photos/3560044/pexels-photo-3560044.jpeg?auto=compress&cs=tinysrgb&w=600');
+        z-index: -1;
+        filter: brightness(60%);
+        background-size: cover;
+        
+     }
+
+     .banner-info {
+        top: 35%;  
+        color: white;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .banner-info h1 {
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        font-family: serif;
+    }
+    
+    .banner-info p {
+        font-size: 1rem;
+        letter-spacing: 1.5rem;
+    }
+
+    .bar {
+
+        z-index: 2;
+        height: 30vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        float: left;
+        line-height: 450%;
+        top: 2%;
+        left: 0;
+        /*opacity: 50%;*/
+    }
+
+    .bar li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    .bar li a:hover {
+        color: rgb(135, 248, 248);
+    }
+
+    /*Content About me*/
+
+    .aboutme {
+        margin-left:25%;
+        height: 100vh;
+        background-color: #eeeeee;
+        color: #013A4B;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .media {
+        width: 80%;
+        position: absolute;
+        top: 41%;
+        margin-left: 10%;
+        
+    }
+
+    .media video {
+        width: 85%;
+        height: 35vh;
+    }
+
+    .aboutme-info {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 5%;
+    }
+
+    .intro {
+        padding: 0 5%;
+        font-size: 1rem;
+    }
+    
+    .content {
+        line-height: 3rem;
+        font-size: 1.5rem;
+        margin-left: 5%;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    /*Content My hobbies*/
+
+    .hobbies {
+        margin-left: 25%;
+        height: 200vh;
+        background-color: #88b4be;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hobbies h2 {
+        position: absolute;
+        font-size: 2rem;
+        top: 2%;
+        margin-left: 0;
+        color:#bc746a;
+        
+    }
+
+    .hobbies-img-me {
+        width: 38%;
+        height: 15%;
+        position: absolute;
+        top: 5%;
+        border-radius: 100%;
+    }
+
+    .hobbies-music {
+        background-color: #056c89;
+        width: 50%;
+        height: 45vh;
+        position: absolute;
+        top: 22%;
+        right: 23.5%;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    .hobbies-music-img {
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+        background-color: red;
+    }
+    
+    .hobbies-music-img img {
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+    }
+    
+    .hobbies-music-info {
+        color: #eeeeee;
+        font-size: 0.9rem;
+        margin: 10%;
+        line-height: 1.3rem;
+    }
+    
+    .hobbies-game {
+        background-color: #eeeeee;
+        width: 50%;
+        height: 45vh;
+        position: absolute;
+        right: 23.5%;
+        top: 46%;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    .hobbies-game-img {
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+        background-color: red;
+    }
+    
+    .hobbies-game-img img {
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+    }
+    
+    
+    .hobbies-game-info {
+        color: #023653;
+        font-size: 0.9rem;
+        margin: 10%;
+        line-height: 1.3rem;
+    }
+    
+    .hobbies-sleep {
+        background-color: #056c89;
+        width: 50%;
+        height: 45vh;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+        position: absolute;
+        top: 70%;
+        right: 23.5%;
+    }
+    
+    .hobbies-sleep-img {
+        width: 100%;
+        height: 15vh;
+        background-color: red;
+        margin: 0 auto;
+    }
+    
+    .hobbies-sleep-img img {
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+    }
+    
+    .hobbies-sleep-info {
+        color: #eeeeee;
+        font-size: 0.9rem;
+        margin: 10%;
+        line-height: 1.3rem;
+    }
+
+    /*Content Story of my life*/
+
+    .story {
+        margin-left: 25%;
+        height: 100vh;
+        background-color: #eeeeee;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .story h1 {
+        position: absolute;
+        font-size: 2rem;
+        top: 3%;
+        left: 20%;
+        right: 20%;
+
+    }
+
+    .y2023 {
+        width: 70%;
+        height: 80vh;
+        position: absolute;
+        background-color: #056c89;
+        top: 15%;
+        left: 15%;
+        align-items: center;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden; 
+    }
+
+    .y2023-img {
+        left: 0%;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        position: absolute;
+    }
+
+    .y2023-info {
+        color: #eeeeee;
+        left: 8%;
+        right: 8%;
+        top: 55%;
+        display: flex;
+        position: absolute;
+        line-height: 1.4rem;
+        font-size: 0.9rem;
+    }
+
+    /*Content Contact me*/
+
+    footer {
+        width: 100%;
+        height: 10vh;
+        background-color: #88b4be;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .contactme {
+         width: 30%;
+         height: 5vh;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         column-gap: 10%;
+         position: absolute;
+         top: 15%;   
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         /*background-color: beige;*/
+     }
+
+
+    .ig a {
+        /*background-color: pink;*/
+        zoom: 1.3;
+        height: 3vh;
+    }
+
+    .ig a img {
+        width: 100%;
+        height: 3vh;
+    }
+
+    .line a {
+        /*background-color: aquamarine;*/
+        zoom: 1.3;
+        height: 3vh;
+    }
+
+    .line a img {
+        width: 100%;
+        height: 3vh;
+    }
+
+}
+
+@media  screen and (min-width: 720px) and (max-width:1100px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    body {
+        background-color: gray;
+    }
+
+    .banner {
+        height: 100vh;
+        display: flex;
+        position: relative;
+        background-color: #023653;
+    }
+
+    .banner nav {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        /*background-color: red;*/
+    }
+    
+    .logo a {
+        color:white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        position: absolute;
+        top: 2%;
+        left: 4%;
+    }
+    
+    .menu {
+        height: 100vh;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        line-height: 500%;
+        background-color: rgba(0,0, 0, 0.4);
+       
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .menu li a:hover {
+        color: rgb(135, 248, 248);
+    }
+
+    
+     .banner::after {
+        width: 100%;
+        height: 100vh;
+        content:"";
+        position: absolute;
+        background-image: url('https://images.pexels.com/photos/3560044/pexels-photo-3560044.jpeg?auto=compress&cs=tinysrgb&w=600');
+        z-index: -1;
+        filter: brightness(60%);
+        background-size: cover;
+        
+     }
+
+     .banner-info {
+        top: 35%;  
+        color: white;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .banner-info h1 {
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        font-family: serif;
+    }
+    
+    .banner-info p {
+        font-size: 1rem;
+        letter-spacing: 1.5rem;
+    }
+
+    .bar {
+
+        z-index: 2;
+        height: 30vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        float: left;
+        line-height: 450%;
+        top: 2%;
+        left: 0;
+        /*opacity: 50%;*/
+    }
+
+    .bar li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    .bar li a:hover {
+        color: rgb(135, 248, 248);
+    }
+
+    /*Content About me*/
+
+    .aboutme {
+        margin-left:25%;
+        height: 100vh;
+        background-color: #eeeeee;
+        color: #013A4B;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .media {
+        width: 80%;
+        position: absolute;
+        top: 41%;
+        margin-left: 10%;
+        
+    }
+
+    .media video {
+        width: 85%;
+        height: 35vh;
+    }
+
+    .aboutme-info {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 5%;
+    }
+
+    .intro {
+        padding: 0 5%;
+        font-size: 1rem;
+    }
+    
+    .content {
+        line-height: 3rem;
+        font-size: 1.5rem;
+        margin-left: 5%;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    /*Content My hobbies*/
+
+    .hobbies {
+        margin-left: 25%;
+        height: 200vh;
+        background-color: #88b4be;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hobbies h2 {
+        position: absolute;
+        font-size: 2rem;
+        top: 2%;
+        margin-left: 0;
+        color:#bc746a;
+        
+    }
+
+    .hobbies-img-me {
+        width: 30%;
+        height: 15%;
+        position: absolute;
+        top: 5%;
+        border-radius: 100%;
+    }
+
+    .hobbies-music {
+        background-color: #056c89;
+        width: 50%;
+        height: 45vh;
+        position: absolute;
+        top: 22%;
+        right: 23.5%;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    .hobbies-music-img {
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+        background-color: red;
+    }
+    
+    .hobbies-music-img img {
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+    }
+    
+    .hobbies-music-info {
+        color: #eeeeee;
+        font-size: 0.9rem;
+        margin: 9%;
+        line-height: 1.3rem;
+    }
+    
+    .hobbies-game {
+        background-color: #eeeeee;
+        width: 50%;
+        height: 45vh;
+        position: absolute;
+        right: 23.5%;
+        top: 46%;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    .hobbies-game-img {
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+        background-color: red;
+    }
+    
+    .hobbies-game-img img {
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+    }
+    
+    
+    .hobbies-game-info {
+        color: #023653;
+        font-size: 0.9rem;
+        margin: 9%;
+        line-height: 1.3rem;
+    }
+    
+    .hobbies-sleep {
+        background-color: #056c89;
+        width: 50%;
+        height: 45vh;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden;
+        position: absolute;
+        top: 70%;
+        right: 23.5%;
+    }
+    
+    .hobbies-sleep-img {
+        width: 100%;
+        height: 20vh;
+        background-color: red;
+        margin: 0 auto;
+    }
+    
+    .hobbies-sleep-img img {
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+    }
+    
+    .hobbies-sleep-info {
+        color: #eeeeee;
+        font-size: 0.9rem;
+        margin: 9%;
+        line-height: 1.3rem;
+    }
+
+    /*Content Story of my life*/
+
+    .story {
+        margin-left: 25%;
+        height: 100vh;
+        background-color: #eeeeee;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .story h1 {
+        position: absolute;
+        font-size: 2rem;
+        top: 3%;
+        left: 20%;
+        right: 20%;
+
+    }
+
+    .y2023 {
+        width: 70%;
+        height: 80vh;
+        position: absolute;
+        background-color: #056c89;
+        top: 15%;
+        left: 15%;
+        align-items: center;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        overflow: hidden; 
+    }
+
+    .y2023-img {
+        zoom: 150%;
+        top: -15%;
+        left: 0%;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        position: absolute;
+    }
+
+    .y2023-info {
+        color: #eeeeee;
+        left: 8%;
+        right: 8%;
+        top: 65%;
+        display: flex;
+        position: absolute;
+        line-height: 1.4rem;
+        font-size: 0.9rem;
+    }
+
+    /*Content Contact me*/
+
+    footer {
+        width: 100%;
+        height: 10vh;
+        background-color: #88b4be;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .contactme {
+         width: 30%;
+         height: 5vh;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         column-gap: 10%;
+         position: absolute;
+         top: 15%;   
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         /*background-color: beige;*/
+     }
+
+
+    .ig a {
+        /*background-color: pink;*/
+        zoom: 1.3;
+        height: 3vh;
+    }
+
+    .ig a img {
+        width: 100%;
+        height: 3vh;
+    }
+
+    .line a {
+        /*background-color: aquamarine;*/
+        zoom: 1.3;
+        height: 3vh;
+    }
+
+    .line a img {
+        width: 100%;
+        height: 3vh;
+    }
+
 }
