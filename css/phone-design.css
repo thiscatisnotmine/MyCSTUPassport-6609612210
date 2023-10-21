@@ -89,6 +89,10 @@
         letter-spacing: 1.5rem;
     }
 
+    .bar {
+        display: none;
+    }
+
     /*Content About me*/
 
     .aboutme {

@@ -134,8 +134,8 @@
 .hobbies h2 {
     font-size: 2rem;
     position: absolute;
-    margin-top: 2%;
-    margin-left: 61vw;
+    top: 2%;
+    left: 40% ;
 }
 
 .hobbies-img-me {
